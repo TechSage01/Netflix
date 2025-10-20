@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.net-logo {
+    width: 180px;
+}
+.hero-section {
+    background-image: url(../images/imgi_44_NG-en-20251006-TRIFECTA-perspective_98b5e811-e0e3-4279-89da-f0e931da3066_small.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}

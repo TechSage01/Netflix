@@ -50,6 +50,9 @@
     border-radius: 5px;
     color: #FFFFFF;
 }
+.btn-2:hover{
+    background-color: #C11119;
+}
 
 .hero-div {
     margin: 100px auto;
@@ -213,7 +216,7 @@
 } */
 
 .trending-section {
-  background-color: #000;
+  background-color: #141414; 
   color: #fff;
   padding: 40px 0;
 }
@@ -247,13 +250,13 @@
 }
 
 .trend-item {
-  flex: 0 0 calc(20% - 0px);
+  flex: 0 0 calc(18% - 6px);
   position: relative;
 }
 
 /* --- IMAGE --- */
 .trend-img {
-  width: 70%;
+  width: 74%;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -268,10 +271,11 @@
 .trend-item::before {
   position: absolute;
   bottom: 10px;
-  left: 15px;
+  /* left: 5px; */
   font-size: 70px;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.2);
+  color: #524e4e;
+  /* color: rgba(255, 255, 255, 0.2); */
   z-index: 2;
 }
 
@@ -647,84 +651,54 @@
     color: #B3B3B3;
 }
 .footer {
+  background-color: #141414; 
+  padding: 40px 10%;
+  color: #757575;
+  font-family: Arial, sans-serif;
+}
+
+.foot {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 60%;
-  margin-left: 120px;
-  /* margin: 0 auto; */
+  justify-content: flex-start;
+  gap: 80px;
   flex-wrap: wrap;
-  gap: 50px;
 }
 
-.main-footer {
-  /* display: flex */
-  /* flex-direction: column; */
-  padding-bottom: 30px;
+.foot .li {
+  list-style: none;
+  margin: 10px 0;
 }
 
-.li {
-  list-style-type: none;
-  padding-bottom: 10px;
+.foot a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
 }
 
-.li a {
-  color: #B3B3B3;
-  font-size: 16px;
+.foot a:hover {
   text-decoration: underline;
 }
 
-.li a:hover {
-  text-decoration: underline;
+/* Optional language or Netflix Nigeria text */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #757575;
 }
 
-/* ===== RESPONSIVE BEHAVIOR ===== */
-
-@media (min-width: 961px) {
-  .footer {
-    flex-direction: column;
-    /* justify-content: space-between; */
-  }
-
-  .footer > div {
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .foot {
+    gap: 40px;
   }
 }
 
-@media (max-width: 960px) and (min-width: 601px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-  }
-
-  .footer > div {
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-/* Below 600px → collapse to single column */
 @media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 90%;
-  }
-
-  .footer > div {
-    width: 100%;
-    /* display: flex; */
-    /* flex-direction: column; */
-  }
-
-  .li a {
-    font-size: 14px; /* smaller text for small screens */
+  .foot {
+    flex-direction: column; /* stack vertically */
   }
 }
+
 
 .select {
   background-color: #000; /* Netflix black background */

@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-
+    border: none;
 }
 
 /* HERO SECTION */
@@ -18,6 +18,7 @@
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    padding-bottom: 30px;
 }
 
 /* HEADER LOGO */
@@ -37,8 +38,8 @@
 
 /* SIGN-IN FORM */
 form {
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.75);
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     margin: 5px auto;
@@ -50,6 +51,7 @@ form {
     flex-direction: column;
     width: 90%;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 .form h2 {
@@ -119,6 +121,7 @@ form {
     text-decoration: underline;
     font-weight: 400;
     font-size: 16px;
+    padding-bottom: 10px;
 }
 .form a {
     color: white;
@@ -126,14 +129,7 @@ form {
     font-size: 0.9rem;
 }
 
-.form a:hover {
-    /* text-decoration: underline; */
-}
 
-/* #remember {
-    margin-top: 10px;
-    margin-right: 5px;
-} */
 .check {
     display: flex;
     gap: 10px;
@@ -142,7 +138,7 @@ form {
   appearance: none;        
   width: 18px;
   height: 18px;
-  border: 2px solid black; 
+  border: 2px solid #e50914; 
   background: transparent; 
   cursor: pointer;
   border-radius: 4px;      
@@ -158,9 +154,8 @@ form {
   content: "✔";
   color: white;
   font-size: 12px;
-  position: absolute;
-  top: -1px;
-  left: 2px;
+  position: sticky;
+  left: 523px;
 }
 .new {
     margin-top: 15px;
@@ -205,3 +200,50 @@ a.learn {
         margin-left: 30px;
     }
 }
+footer {
+    list-style-type: none;
+    background-color: black;
+    border: none;
+}
+.foot {
+    padding-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+    width: 68%;
+    margin: auto;
+    color: white;
+}
+.foot a {
+    color: white;
+}
+.foot-div {
+    display: flex;
+    padding-bottom: 30px;
+    width: 70%;
+    gap: 2em;
+    /* margin: auto; */
+    padding-top: 20px;
+    /* padding-left: 100px; */
+    margin-left: 120px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    /* background-color: black; */
+    /* margin: auto; */
+}
+
+li a {
+    /* padding-left: 100px; */
+    color: white;
+}
+.last-2{
+    display: flex;
+    gap: 5.2em;
+    width: 70%;
+    margin-left: 200px;
+    padding-bottom: 30px;
+}
+/* .operate {
+    border: 2px solid green;
+    padding-left: 204px;
+} */

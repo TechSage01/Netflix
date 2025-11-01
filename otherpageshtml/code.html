@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../otherpagescss/signin.css">
+    <link rel="stylesheet" href="../otherpagescss/code.css">
 </head>
 <body>
     <section class="hero-section">
@@ -16,15 +16,13 @@
             <form action="">
                 <div class="form">
                     <h2>Sign In</h2>
-                    <input type="text" placeholder="Email or mobile number" id="textInput" required   pattern="^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}$">
+                    <input type="text" placeholder="Email or mobile number" id="textInput" required pattern="^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}$">
                     <p id="message" style="color: red; font-weight: bold;"></p>
-                    <input type="password" placeholder="Password" id="passInput" required minlength="4" maxlength="60">
-                    <p id="message2" style="color: red; font-weight: bold;"></p>
-
-                    <button class="sign-btn" onclick="signIn(event)">Sign in</button>
+                    <p class="para" style="padding-bottom: 14px; text-align: center;     color: rgba(255, 255, 255, 0.8);">Messages and data rates may apply</p>
+                    <button class="sign-btn" onclick="signIn(event)">Send Sign-in Code</button>
                     <p class="or">OR</p>
-                    <a href="./code.html" class="a-2">Use a Sign-in code</a>
-                    <a href="" class="a-1">Forgot password?</a>
+                    <a href="./signin.html" class="a-2">Use password</a>
+                    <a href="" class="a-1">Forgot Email or Phone Number?</a>
                     <div class="check">
                         <input type="checkbox" id="remember" class="box">
                         <label for="remember">Remember me</label>
@@ -36,6 +34,21 @@
             </form>
         </div>
     </section>
+    <footer>
+        <div class="foot"><p>Questions?</p><a href="">Contact us.</a></div>
+        <div class="foot-div">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Help center</a></li>
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Privacy</a></li>
+            
+        </div>
+        <div class="last-2">
+            <li><a href="">Cookie Preferences</a></li>
+            <li><a href="" class="operate">Corporate Information</a></li>
+
+        </div>
+    </footer>
     <script src="../otherpagesjs/signin.js"></script>
 </body>
 </html>
